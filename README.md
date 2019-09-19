@@ -16,9 +16,9 @@ Alpine Liunux - `latest`
 
 ## Basic Usage
 
-```
-# Deploy the pod to the your Kubernetes cluster
-$ cat <<EOF | kubectl apply -f -
+Create the Pod Spec `kube-tools.yml`:
+
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -31,7 +31,13 @@ spec:
       command:
         - sleep
         - 24h
-EOF
+```
+
+Launch the pod into your cluster:
+
+```bash
+# Deploy the pod to the your Kubernetes cluster
+$ kubectl apply -f kube-tools.yml
 
 # Exec into the pod to start performing troubleshooting
 $ kubectl exec -it kube-tools -- ash
