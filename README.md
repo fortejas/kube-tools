@@ -16,7 +16,7 @@ Alpine Liunux - `latest`
 
 ## Basic Usage
 
-```bash
+```
 # Deploy the pod to the your Kubernetes cluster
 $ cat <<EOF | kubectl apply -f -
 apiVersion: v1
