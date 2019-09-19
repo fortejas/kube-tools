@@ -22,11 +22,11 @@ $ cat <<EOF | kubectl apply -f -
 apiVersion: v1
 kind: Pod
 metadata:
-  name: kubectl-tools
+  name: kube-tools
   namespace: default
 spec:
   containers:
-    - name: tools
+    - name: kube-tools
       image: fortejas/kube-tools
       command:
         - sleep
@@ -34,5 +34,13 @@ spec:
 EOF
 
 # Exec into the pod to start performing troubleshooting
-$ kubectl exec -it kubectl-tools -- ash
+$ kubectl exec -it kube-tools -- ash
+```
+
+## Clean Up
+
+Once you've finished working with this pod you can delete the pods:
+
+```
+$ kubectl delete pod --wait=false kube-tools
 ```
