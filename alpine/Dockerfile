@@ -2,10 +2,9 @@ FROM alpine:3.10.2
 
 ARG kubectl_version=v1.13.11
 ARG version=0.1.0
-ARG hash=73887e8
 
 LABEL Maintainer 'Jason Forte <fortejas@amazon.com>'
-LABEL Version ${version}-${hash}
+LABEL Version ${version}
 
 RUN apk update \
     && apk add \
