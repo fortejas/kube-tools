@@ -7,6 +7,7 @@ This image contains the following tools to help troubleshoot Kubernetes problems
  - kubectl - for API troubleshooting
  - dig & nslookup - for DNS troubleshooting
  - nc - for routing troubleshooting
+ - curl - for http request troubleshooting
 
 
 ## Available Tags
