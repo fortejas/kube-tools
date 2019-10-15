@@ -12,7 +12,7 @@ This image contains the following tools to help troubleshoot Kubernetes problems
 
 ## Available Tags
 
-Alpine Liunux - `latest`
+Alpine Linux - `latest`
 
 
 ## Basic Usage
